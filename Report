@@ -1,0 +1,34 @@
+Overview of the Analysis
+The purpose of this analysis was to develop a model capable of accurately predicting whether applicants for funding from Alphabet Soup will be successful in using the funds effectively. By leveraging machine learning techniques I aimed to create a model that can assist Alphabet Soup in allocating resources more efficiently and effectively.
+
+
+
+Results
+Data Preprocessing
+
+Target Variable(s):
+The target variable for our model is IS_SUCCESSFUL, representing whether the funding application was successful (1) or not (0).
+
+Feature Variable(s):
+The feature variables for our model include all columns except for IS_SUCCESSFUL, EIN, and NAME.
+
+Variables Removed:
+The columns EIN and NAME were removed from the input data as they do not contribute to the predictive power of the model.
+
+
+
+Compiling, Training, and Evaluating the Model
+Model Architecture:
+
+The neural network model consists of four hidden layers with 80, 50, 30, and 15 neurons, respectively, and ReLU activation functions. The output layer comprises a single neuron with a sigmoid activation function to perform binary classification. This architecture was chosen to increase the complexity of the model and capture more intricate patterns in the data.
+
+Model Performance:
+The final model achieved an accuracy of approximately 72.51% on the test dataset after training for 200 epochs. Although the accuracy is respectable, it did not meet the target performance threshold set for this analysis.
+
+Steps Taken for Performance Improvement:
+To enhance the model's performance, several strategies were employed, including increasing the number of hidden layers and neurons, experimenting with increasing the cutoff Value, and training the model for a higher number of epochs.
+
+
+
+Summary
+The deep learning model achieved an accuracy of approximately 72.51% on the test dataset after training for 200 epochs. While the model's performance is respectable, it did not meet the target accuracy threshold set for this analysis. Further optimization and experimentation may be necessary to improve the model's accuracy. Or alternative models such as random forest.
